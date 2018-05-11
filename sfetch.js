@@ -3,7 +3,7 @@
 // 	.then(response => response.json())
 // 	.then(json => console.log(json))
 function putOnWeb(x) {
-	document.getElementById('here').innerText = x
+	document.getElementById('here').innerText = x;
 }
 
 fetch('https://jsonplaceholder.typicode.com/posts', {
