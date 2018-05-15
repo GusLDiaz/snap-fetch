@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-
+require_once __DIR__ . '/composer/autoload_real.php';
 use GuzzleHttp\Client;
 $client = new GuzzleHttp\Client(['base_uri' => 'https://www.hikingproject.com/data/']);
 
