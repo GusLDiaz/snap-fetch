@@ -5,6 +5,7 @@ require_once 'vendor/autoload.php';
 use GuzzleHttp\Client;
 
 
+
 $client = new GuzzleHttp\Client{
 ['base_uri' => 'https://www.hikingproject.com/data/']
 };
