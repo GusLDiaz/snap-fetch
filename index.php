@@ -2,9 +2,8 @@
 require_once 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
-$client = new GuzzleHttp\Client {
-'base_uri'=> 'https://www.hikingproject.com/data/';
-};
+$client = new Client('base_uri' => 'https://www.hikingproject.com/data/');
+
 $response = $client->request('get-trails', 'https://www.hikingproject.com/data/get-trails?lat=35.085470&lon=-106.649072&maxDistance=200&maxResults=500&key=200265121-1809e265008042f9977e435839863103');
 var_dump($response);
 $data = $response->getBody();
